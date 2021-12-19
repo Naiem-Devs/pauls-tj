@@ -439,6 +439,43 @@ div#md_pkg {
         font-size: 16px;
         margin-bottom: 5px;
     }
+    .modal-mid-content i { 
+        width: 250px;
+        height: 250px; 
+        position: relative;
+        top: 0;
+        display: block;
+        margin: auto;
+        margin-top: 20px;
+    }
+    .modal-mid-content {
+        padding: 15px;
+        margin: 0px;
+    }
+    .popup-box h1 {
+        font-size: 24px;  
+        margin-bottom: 20px;
+        line-height: 30px;
+    }
+    .modal-content { 
+        padding: 0px;
+        border: 3px dashed #ff0000;
+    }
+    .modal-mid-content h3 {
+        font-size: 20px;
+    }
+    .modal-mid-content p {
+        max-width: 100%;
+        font-size: 18px;
+        line-height: 24px;  
+    }
+    .modal_btn a { 
+        height: 40px; 
+        font-size: 16px;  
+    }
+
+
+
 }
  
 /* Large Mobile screen :480px. */
