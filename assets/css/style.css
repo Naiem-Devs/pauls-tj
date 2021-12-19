@@ -242,6 +242,15 @@ section.package-area .section_title h1 {margin-bottom: 75px;font-size: 48px;}
     font-size: 20px;
 }
 
+.pkg_item p i {
+    font-style: normal;
+    margin-bottom: 0;
+    display: inline-block;
+    position: relative;
+}
+
+.pkg_item p i:after {content: "";position: absolute;width: 100%;height: 2px;background: red;left: 0;top: 50%;}
+
 .pkg_item i {
     position: relative;
     display: block;
@@ -365,11 +374,7 @@ i.stp img {
 
 
  
-/* section start */
-.reviwe-area {
-}
-.section_title {
-}
+/* reviwe section start */
 
 .reviwe_blk {background: #fff;border: 2px solid #1b577d;border-radius: 10px;box-shadow: 0 0 9px 0 rgb(0 0 0 / 10%);text-align: left;overflow: hidden;max-width: 350px;}
 
@@ -386,14 +391,15 @@ i.stp img {
     overflow: hidden;
     border: 2px solid #1b577d;
     margin-right: 24px;
+    display: block;
 }
-.urv_title {
-}
+.urv_title {margin-left: 10px;}
 
 .urv_title h3 {
     font-size: 20px;
     margin-bottom: 0;
     font-weight: 600;
+    color: #1b577d;
 }
 
 .urv_title p {
@@ -406,15 +412,98 @@ i.stp img {
     font-weight: 300;
     margin-top: 5px;
 }
-/* section start */
+/* reviwe section start */
 
 
  
-/* section start */
-/* section End */
+/* Guarante section start */
+.Guarante-banner {
+}
+.container {
+}
+.row {
+}
+
+div#md_pkg {
+    display: none;
+}
+.col-lg-12 {
+}
+.Guarante_cont {display: flex;align-items: center;padding: 30px;border-radius: 10px;background: #1b577d;}
+
+.Guarante_cont i {
+    display: block;
+    margin-right: 20px;
+}
+.grnt_txt {color: #fff;}
+
+.grnt_txt p {
+    font-size: 19px;
+}
+
+.grnt_txt h4 {
+    font-size: 25px;
+    display: flex;
+    align-items: baseline;
+    margin: 12px 0;
+    color: #f69052;
+}
+
+.grnt_txt h4 img {
+    margin-left: 10px;
+}
+
+.grnt_txt h1 {font-size: 33px;}
+/* Guarante section End */
  
-/* section start */
-/* section End */
+/* faq section start */
+.faq button.accordion-button {
+    border: none;
+    border-bottom: 1px solid #dddfe5;
+    padding: 17px 45px 19px 20px;
+    font-size: 20px;
+    line-height: 26px;
+    color: #000000;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    text-align: left;
+}
+
+.faq .accordion-body {
+    border-bottom: 1px solid #dddfe5;
+    padding-top: 25px;
+}
+
+.faq_cont p {
+    letter-spacing: 0.5px;
+    font-size: 17px;
+    line-height: 25px;
+    color: #010101;
+}
+
+.faq_cont ul {
+    margin-left: 49px;
+    margin-bottom: 20px;
+}
+
+.faq_cont ul li {
+    margin-bottom: 10px;
+    list-style: disc;
+    padding-left: 10px;
+}
+
+.faq .accordion-button::after {
+    content: "+";
+    font-size: 25px;
+}
+
+.faq .accordion-button:not(.collapsed)::after {
+    content: "-";
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 0;
+}
+/* faq section End */
 
 
 

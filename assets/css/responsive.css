@@ -7,13 +7,167 @@
 
 /* Normal screen :992px. */
 @media (min-width: 992px) and (max-width: 1200px) {
-
+    .package_blk {
+        width: 278px;
+    }
+    
+    .package_blk.active {
+        transform: scale(1.05) translateX(-17px);
+        width: 312px;
+    }
+    .container {
+        max-width: 90%;
+    }
+    .add_card a {
+        max-width: 233px;
+        font-size: 23px;
+    }
+    
+    .pkg_item i img {
+        width: 100%;
+    }
 
 }
 
  
 /* Tablet screen :768px. */
 @media (min-width: 768px) and (max-width: 991px) {
+    .header_text h1 {
+        font-size: 31px;
+    }
+    
+    .header_text h2 {
+        font-size: 30px;
+    }
+    
+    .video_frame i {
+        height: 560px;
+    }
+    
+    section.package-area .section_title h1 {
+        font-size: 40px;
+    }
+    
+    .section_title h1 {
+        font-size: 40px;
+    }
+    
+    .mb_100 {
+        margin-bottom: 60px;
+    }
+    .video_frame {
+        margin-top: -210px;
+    }
+    .package_blk {
+        width: 106%;
+    }
+
+.package_blk.active {
+    transform: scale(1.07);
+}
+.pkg_item i img {
+    width: 100%;
+}
+
+.pkg_title h4 {
+    font-size: 24px;
+}
+
+.pkg_item h4 {
+    font-size: 22px;
+}
+
+.pkg_item p {
+    font-size: 16px;
+}
+
+.pkg_item p i {
+    display: inline-block;
+}
+
+.pkg_item h1 {
+    font-size: 50px;
+}
+
+.add_card a {
+    max-width: 90%;
+    font-size: 20px;
+    height: 54px;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.add_card h5 {
+    font-size: 16px;
+}
+
+.add_card p {
+    font-size: 12px;
+}
+.urv i img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.urv {
+    padding: 15px;
+    padding-right: 0;
+}
+
+.urv i {
+    width: 55px;
+    height: 55px;
+    margin-right: 0;
+}
+
+.urv_title h3 {
+    font-size: 16px;
+}
+
+.urv_title p {
+    font-size: 16px;
+    margin-top: 1px;
+    padding: 0 !important;
+}
+
+.reviwe_blk p {
+    padding: 18px;
+}
+
+.grnt_txt h1 {
+    font-size: 29px;
+}
+
+.faq_cont {
+    padding-right: 35px;
+}
+
+.dv_blk {
+    margin-bottom: 50px;
+}
+
+.dv_blk p {
+    font-size: 16px;
+}
+
+.dv_blk h4 {
+    font-size: 18px;
+}
+
+.dv_blk i {
+    max-width: 300px;
+    margin: auto;
+}
+
+.rl_blk {
+    padding-left: 30px;
+}
+
+.rl_blk ul li {
+    flex: 0 0 45%;
+    width: 40%;
+}
 
 
 }
@@ -22,11 +176,277 @@
 /* small screen :320px. */
 @media (max-width: 767px) {
 
- 
+    .header_text h1 {
+        font-size: 24px;
+    }
+    
+    .header_text h2 {
+        font-size: 21px;
+    }
+    
+    .video_frame i {
+        height: 435px;
+    }
+    
+    section.package-area .section_title h1 {
+        font-size: 26px;
+        margin-bottom: 30px;
+    }
+    
+    .section_title h1 {
+        font-size: 26px;
+    }
+    
+    .mb_100 {
+        margin-bottom: 60px;
+    }
+
+.package-area {
+    padding: 50px 0 30px;
+    margin-bottom: 35px;
+}
+    .video_frame {
+        margin-top: -148px;
+    }
+    .package_blk {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+div#dsk_pkg {
+    display: none;
+}
+
+div#md_pkg {
+    display: block;
+}
+
+.package_blk.active {
+    transform: scale(1);
+}
+.pkg_item i img {
+    width: 100%;
+}
+
+.pkg_title h4 {
+    font-size: 24px;
+}
+
+.pkg_item h4 {
+    font-size: 22px;
+}
+
+.pkg_item p {
+    font-size: 15px;
+    margin-top: 11px;
+    font-style: normal;
+}
+
+.pkg_item p i {
+    display: block;
+    width: max-content;
+    margin: auto;
+}
+
+.pkg_item h1 {
+    font-size: 50px;
+}
+
+.add_card a {
+    max-width: 90%;
+    font-size: 22px;
+    height: 60px;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.add_card h5 {
+    font-size: 17px;
+}
+
+.add_card p {
+    font-size: 14px;
+}
+.urv i img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.urv {
+    padding: 15px;
+    padding-right: 0;
+}
+
+.urv i {
+    width: 65px;
+    height: 65px;
+    margin-right: 10px;
+}
+
+.urv_title h3 {
+    font-size: 16px;
+}
+
+.urv_title p {
+    font-size: 16px;
+    margin-top: 1px;
+    padding: 0 !important;
+}
+
+.reviwe_blk p {
+    padding: 18px;
+}
+
+.grnt_txt h1 {
+    font-size: 23px;
+}
+
+.faq_cont {
+    padding-right: 35px;
+}
+
+.dv_blk {
+    margin-bottom: 50px;
+}
+
+.dv_blk p {
+    font-size: 16px;
+    max-width: 300px;
+    margin: 10px auto 20px;
+}
+
+.dv_blk h4 {
+    font-size: 18px;
+    max-width: 300px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.dv_blk i {
+    max-width: 300px;
+    margin: auto;
+    max-height: 280px;
+}
+
+.rl_blk {
+    padding-left: 30px;
+    height: 421px;
+}
+
+.rl_blk ul li {
+    flex: 0 0 95%;
+    width: 75%;
+}
+
+    .Guarante_cont {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .footer-link ul {
+        flex-wrap: wrap;
+        width: 100%;
+        /* display: unset; */
+        justify-content: center;
+    }
+    
+    .footer-link ul li a {display: inline-block;width: max-content;}
+    
+    .footer-link ul li {
+        flex: 0;
+        margin-bottom: 10px;
+    }
+    
+    .footer-link ul li span {
+        display: inline-block;
+        margin: 0 15px;
+    }
+    .reviwe_blk {
+        margin: auto;
+        margin-bottom: 30px;
+    }
+    
+    .Guarante_cont i {
+        margin: auto;
+        margin-bottom: 30px;
+    }
+    
+    .grnt_txt h4 {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+    
+    .grnt_txt p {
+        font-size: 17px;
+    }
+    
+    .faq button.accordion-button {
+        font-size: 17px;
+        padding-right: 15px;
+        padding-left: 0;
+    }
+    
+    .faq .accordion-button::after {
+        font-weight: 400;
+        right: 0;
+    }
+    
+    .faq .accordion-body {
+        padding-left: 10px;
+    }
+    
+    .faq_cont p {
+        font-size: 15px;
+        letter-spacing: 0.3px;
+    }
+    
+    a.more {
+        width: 100%;
+    }
+    header.header-area {
+        height: 380px;
+    }
+    .pkg_item {
+        display: flex;
+        margin-top: 40px;
+        margin-bottom: 10px;
+    }
+    
+    .pkg_item i {
+        margin-bottom: 0;
+        max-width: 50%;
+    }
+
+.pkg_item i p {
+    margin-left: 10px;
+}
+    
+    .pkg_item i span h5 p {
+        margin-top: 0;
+        margin-left: 0;
+    }
+    
+    i.stp span {
+        left: 41%;
+        top: -24px;
+    }
+    .pkg_price p i {
+        text-align: center;
+        max-width: 100%;
+    }
+    
+    .pkg_price p {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
 }
  
 /* Large Mobile screen :480px. */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
 .container {width:450px}
+.rl_blk {
+    height: 370px;
+}
  
 }
