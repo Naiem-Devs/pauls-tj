@@ -145,7 +145,13 @@ body.visited .Discover-video {
 body.visited .sec_hide {
     display: block;
 }
+body.visited header.header-area {
+    display: none;
+}
 
+body.visited .video_frame {
+    margin-top: 50px;
+}
 
 /* default-css END 
 ================================== */
