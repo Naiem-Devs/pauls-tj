@@ -41,7 +41,6 @@
     }
     
     .video_frame i {
-        height: 560px;
     }
     
     section.package-area .section_title h1 {
@@ -185,7 +184,7 @@
     }
     
     .video_frame i {
-        height: 435px;
+    padding: 1rem;
     }
     
     section.package-area .section_title h1 {
