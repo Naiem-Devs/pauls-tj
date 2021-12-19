@@ -13,7 +13,17 @@
     }, 100);
   }
 
+
+
+  // View more
+  $('.more').click(function () {
+    $('.rl_blk').toggleClass('show')
+  })
+  
+
+  // Load the page and then do rest of the work 
   window.addEventListener('load', (e) => {
+
     // Load Pupup on page load
     $('#promoModal').modal('show');
 
@@ -21,58 +31,54 @@
     let this_user_visited = localStorage.getItem('is_visited');
     if (this_user_visited == 'yes') {
         document.querySelector('body').classList.add('visited')
-    }else{
-
+    }else{ 
         
-        // ====== For Desktop ====
-
-        // Find the clickable position 
-        let toClick_desktop = document.querySelector('.desktop_view div#bmpui-id-8');
-        if (toClick_desktop) {  // if that is avileable
-            toClick_desktop.addEventListener('click', (e) => { // if clicked on that
-                let getVideo = document.querySelector('.desktop_view video'); // finding the video
-                const timeInterVal = setInterval(() => {// checking in each second the current time of the video
-                    if (getVideo.currentTime >= 10) { // if the video current time is equal or over 10 second
-                        console.log('it is over 10 second')
-                        localStorage.setItem('is_visited', 'yes') // set the value as yes on localStorage of the browser
-                        document.querySelector('body').classList.add('visited') // and add a class called "Visited" to do other tasks
-                        clearInterval(timeInterVal) // and stop this interval
-                        ScrollDown()
-                    }
-                }, 1000);
-            })
+        // ====== For Desktop ==== 
+        function DesktopVideoFunc() { 
+            // Find the clickable position 
+            let toClick_desktop = document.querySelector('.desktop_view div#bmpui-id-8');
+            if (toClick_desktop) {  // if that is avileable
+                toClick_desktop.addEventListener('click', (e) => { // if clicked on that
+                    let getVideo = document.querySelector('.desktop_view video'); // finding the video
+                    const timeInterVal = setInterval(() => {// checking in each second the current time of the video
+                        if (getVideo.currentTime >= 10) { // if the video current time is equal or over 10 second
+                            console.log('it is over 10 second')
+                            localStorage.setItem('is_visited', 'yes') // set the value as yes on localStorage of the browser
+                            document.querySelector('body').classList.add('visited') // and add a class called "Visited" to do other tasks
+                            clearInterval(timeInterVal) // and stop this interval
+                            ScrollDown()
+                        }
+                    }, 1000);
+                })
+            }
         }
-
-
+        DesktopVideoFunc()
+ 
         // ====== For Mobile ====
-        
-        // Find the clickable position 
-        let toClick_mobile = document.querySelector('.mobile_view div#bmpui-id-7');
-        if (toClick_mobile) {  // if that is avileable
-            toClick_mobile.addEventListener('click', (e) => { // if clicked on that
-              console.log(toClick_mobile)
-                let getVideo = document.querySelector('.mobile_view video'); // finding the video
-                const timeInterVal = setInterval(() => {// checking in each second the current time of the video
-                    if (getVideo.currentTime >= 10) { // if the video current time is equal or over 10 second
-                        console.log('it is over 10 second')
-                        localStorage.setItem('is_visited', 'yes') // set the value as yes on localStorage of the browser
-                        document.querySelector('body').classList.add('visited') // and add a class called "Visited" to do other tasks
-                        clearInterval(timeInterVal) // and stop this interval
-                        ScrollDown()
-                    }
-                }, 1000);
-            })
+        function MobileVideoFunc() { 
+            // Find the clickable position 
+            let toClick_mobile = document.querySelector('.mobile_view div#bmpui-id-7');
+            if (toClick_mobile) {  // if that is avileable
+                toClick_mobile.addEventListener('click', (e) => { // if clicked on that
+                console.log(toClick_mobile)
+                    let getVideo = document.querySelector('.mobile_view video'); // finding the video
+                    const timeInterVal = setInterval(() => {// checking in each second the current time of the video
+                        if (getVideo.currentTime >= 10) { // if the video current time is equal or over 10 second
+                            console.log('it is over 10 second')
+                            localStorage.setItem('is_visited', 'yes') // set the value as yes on localStorage of the browser
+                            document.querySelector('body').classList.add('visited') // and add a class called "Visited" to do other tasks
+                            clearInterval(timeInterVal) // and stop this interval
+                            ScrollDown()
+                        }
+                    }, 1000);
+                })
+            }
         }
+        MobileVideoFunc()
     }
 
     
 })
- 
-  // View more
-  $('.more').click(function () {
-    $('.rl_blk').toggleClass('show')
-  })
-
-      
+  
  
 })(jQuery);
