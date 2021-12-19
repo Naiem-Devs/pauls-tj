@@ -185,7 +185,9 @@ body.visited .video_frame {
 /* video- section start */
 
 .video_frame {margin-top: -220px;}
-
+.video_frame.mobile_view{
+    display: none;
+}
 .video_frame i {
     display: block;
     width: 100%;

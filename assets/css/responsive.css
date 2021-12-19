@@ -486,3 +486,13 @@ div#md_pkg {
 }
  
 }
+
+/* This Media query only for mobile and desktop video */
+@media only screen and (max-width: 844px) {
+    .video_frame.desktop_view{
+        display: none;
+    }
+    .video_frame.mobile_view{
+        display: block;
+    }
+}
