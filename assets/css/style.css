@@ -152,7 +152,7 @@ body.visited .sec_hide {
  
 /* header- section start */
 .header-area {background: url(../img/banner-bgr.jpg);text-align: center;background-size: cover;background-repeat: no-repeat;height: 450px;}
-.header_text {padding: 25px 0 30px;}
+.header_text {padding: 5px 0 15px;}
 
 .header_text h2 {
     color: #fff;
@@ -167,7 +167,7 @@ body.visited .sec_hide {
 .header_text h1 {
     font-size: 44px;
     color: #fff;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
 }
 
 .header_text h1 span {
@@ -178,7 +178,7 @@ body.visited .sec_hide {
  
 /* video- section start */
 
-.video_frame {margin-top: -180px;}
+.video_frame {margin-top: -220px;}
 
 .video_frame i {
     display: block;
