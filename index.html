@@ -16,38 +16,31 @@
     </head>
     <body>
 
-        <!-- Modal Start -->
-
-        <!-- Button trigger modal -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                Launch demo modal
-            </button>
-            
-            
-            <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <button type="button" id="popup-close" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        <div class="modal-body popup-box">
-                            <h1>WAIT!! Don't Miss This!</h1>
-                            <div class="modal-mid-content">
-                                <h3>Discover The "Amazonian Secret"...</h3>
-                                <p>And the REAL reason vision fades as you age PLUS the 30-second daily trick to maintain healthy eyesight!</p>
-                                <i>
-                                    <img src="assets/img/pop-img.jpg" alt="">
-                                </i>
-                            </div>
-                            <div class="modal_btn">
-                                <a href="javascript:void(0)">Continue Watching Video</a>
-                                <a href="javascript:void(0)" class="grn">Read The Text Version</a>
-                            </div>
+        <!-- Modal/PopUp Start -->   
+        <div class="modal fade" id="promoModal" tabindex="-1" aria-labelledby="promoModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <button type="button" id="popup-close" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div class="modal-body popup-box">
+                        <h1>WAIT!! Don't Miss This!</h1>
+                        <div class="modal-mid-content">
+                            <h3>Discover The "Amazonian Secret"...</h3>
+                            <p>And the REAL reason vision fades as you age PLUS the 30-second daily trick to maintain healthy eyesight!</p>
+                            <i>
+                                <img src="assets/img/pop-img.jpg" alt="">
+                            </i>
+                        </div>
+                        <div class="modal_btn">
+                            <a href="javascript:void(0)" data-bs-dismiss="modal" aria-label="Close">Continue Watching Video</a>
+                            <a href="/written" class="grn">Read The Text Version</a>
                         </div>
                     </div>
                 </div>
             </div>
+        </div> 
+        <!-- Modal/PopUp End-->
 
-        <!-- Modal End-->
-
+        <!-- Header-area STARTED -->
        <header class="header-area">
            <div class="container">
                <div class="row">
@@ -60,22 +53,55 @@
                </div>
            </div>
        </header>
-
+       <!-- Header-area END -->
+ 
+       <!-- Main START -->
         <main>
 
-            
+            <!-- Hero-area STARTED -->
             <section class="video-area mb_100">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-12">
-                            <div class="video_frame">
-                                <i></i>
+                            <div class="video_frame desktop_view d-none d-md-block">
+                                <i>
+                                    <div id="vidalytics_embed_ohXsJtypwjkyxM4r" style="width: 100%; position:relative; padding-top: 56.25%;"></div>
+                                    <script type="text/javascript">
+                                    (function (v, i, d, a, l, y, t, c, s) {
+                                        y='_'+d.toLowerCase();c=d+'L';if(!v[d]){v[d]={};}if(!v[c]){v[c]={};}if(!v[y]){v[y]={};}var vl='Loader',vli=v[y][vl],vsl=v[c][vl + 'Script'],vlf=v[c][vl + 'Loaded'],ve='Embed';
+                                        if (!vsl){vsl=function(u,cb){
+                                            if(t){cb();return;}s=i.createElement("script");s.type="text/javascript";s.async=1;s.src=u;
+                                            if(s.readyState){s.onreadystatechange=function(){if(s.readyState==="loaded"||s.readyState=="complete"){s.onreadystatechange=null;vlf=1;cb();}};}else{s.onload=function(){vlf=1;cb();};}
+                                            i.getElementsByTagName("head")[0].appendChild(s);
+                                        };}
+                                        vsl(l+'loader.min.js',function(){if(!vli){var vlc=v[c][vl];vli=new vlc();}vli.loadScript(l+'player.min.js',function(){var vec=v[d][ve];t=new vec();t.run(a);});});
+                                    })(window, document, 'Vidalytics', 'vidalytics_embed_ohXsJtypwjkyxM4r', 'https://fast.vidalytics.com/embeds/Ipm9Y6ab/ohXsJtypwjkyxM4r/');
+                                    </script>
+                                </i>
+                            </div>
+                            <div class="video_frame mobile_view d-block d-md-none">
+                                <i>
+                                    <div id="vidalytics_embed_RKiTS6LFVLhm7On8" style="width: 100%; position:relative; padding-top: 175%;"></div>
+                                    <script type="text/javascript">
+                                    (function (v, i, d, a, l, y, t, c, s) {
+                                        y='_'+d.toLowerCase();c=d+'L';if(!v[d]){v[d]={};}if(!v[c]){v[c]={};}if(!v[y]){v[y]={};}var vl='Loader',vli=v[y][vl],vsl=v[c][vl + 'Script'],vlf=v[c][vl + 'Loaded'],ve='Embed';
+                                        if (!vsl){vsl=function(u,cb){
+                                            if(t){cb();return;}s=i.createElement("script");s.type="text/javascript";s.async=1;s.src=u;
+                                            if(s.readyState){s.onreadystatechange=function(){if(s.readyState==="loaded"||s.readyState=="complete"){s.onreadystatechange=null;vlf=1;cb();}};}else{s.onload=function(){vlf=1;cb();};}
+                                            i.getElementsByTagName("head")[0].appendChild(s);
+                                        };}
+                                        vsl(l+'loader.min.js',function(){if(!vli){var vlc=v[c][vl];vli=new vlc();}vli.loadScript(l+'player.min.js',function(){var vec=v[d][ve];t=new vec();t.run(a);});});
+                                    })(window, document, 'Vidalytics', 'vidalytics_embed_RKiTS6LFVLhm7On8', 'https://fast.vidalytics.com/embeds/Ipm9Y6ab/RKiTS6LFVLhm7On8/');
+                                    </script>
+                                </i>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
+            <!-- Hero-area END -->
 
+            <!-- Package-area STARTED -->
             <section class="package-area mb_100">
                 <div class="container">
                     <div class="row">
@@ -264,8 +290,9 @@
                     </div>
                 </div>
             </section>
+            <!-- Package-area END --> 
 
-
+            <!-- Reviwe-area STARTED -->
             <section class="reviwe-area mb_50">
                 <div class="container">
                     <div class="row">
@@ -324,7 +351,9 @@
                     </div>
                 </div>
             </section>
+            <!-- Reviwe-area END -->
 
+<<<<<<< HEAD
 
             <section class="Guarante-banner mb_50">
                 <div class="container">
@@ -677,6 +706,9 @@
                 </div>
             </section>
 
+=======
+            <!-- Discover-area STARTED -->
+>>>>>>> b3102ca36bedbf4736227e8fa1fd9c099f817f61
             <section class="Discover-video mb_100">
                 <div class="container">
                     <div class="row">
@@ -730,7 +762,9 @@
                     </div>
                 </div>
             </section>
+            <!-- Discover-area END -->
 
+            <!-- References-area STARTED -->
             <section class="References-area mb_100">
                 <div class="container">
                     <div class="row">
@@ -846,9 +880,12 @@
                     </div>
                 </div>
             </section>
+            <!-- References-area END -->
             
         </main>
+        <!-- Main END -->
     
+        <!-- Footer-area STARTED -->
         <footer class="footer-area">
             <div class="container">
                 <div class="row">
@@ -895,6 +932,7 @@
                 </div>
             </div>
         </footer>
+        <!-- Footer-area END -->
 
 		<!-- JS here --> 
         <script src="assets/js/jquery-3.4.1.min.js"></script>
@@ -902,8 +940,52 @@
         <script src="assets/js/bootstrap.min.js"></script>
         <script src="assets/js/main.js"></script>
         <script>
-            $('.more').click(function () {
-                $('.rl_blk').toggleClass('show')
+            window.addEventListener('load', (e) => {
+                $('#promoModal').modal('show');
+                // Checking the visitor
+                let this_user_visited = localStorage.getItem('is_visited');
+                if (this_user_visited == 'yes') {
+                    document.querySelector('body').classList.add('visited')
+                }else{
+
+                    
+                    // ====== For Desktop ====
+
+                    // Find the clickable position 
+                    let toClick_desktop = document.querySelector('.desktop_view div#bmpui-id-8');
+                    if (toClick_desktop) {  // if that is avileable
+                        toClick_desktop.addEventListener('click', (e) => { // if clicked on that
+                            let getVideo = document.querySelector('.desktop_view video'); // finding the video
+                            const timeInterVal = setInterval(() => {// checking in each second the current time of the video
+                                if (getVideo.currentTime >= 10) { // if the video current time is equal or over 10 second
+                                    console.log('it is over 10 second')
+                                    localStorage.setItem('is_visited', 'yes') // set the value as yes on localStorage of the browser
+                                    document.querySelector('body').classList.add('visited') // and add a class called "Visited" to do other tasks
+                                    clearInterval(timeInterVal) // and stop this interval
+                                }
+                            }, 1000);
+                        })
+                    }
+
+
+                    // ====== For Mobile ====
+                    
+                    // Find the clickable position 
+                    let toClick_mobile = document.querySelector('.mobile_view div#bmpui-id-8');
+                    if (toClick_mobile) {  // if that is avileable
+                        toClick_mobile.addEventListener('click', (e) => { // if clicked on that
+                            let getVideo = document.querySelector('.mobile_view video'); // finding the video
+                            const timeInterVal = setInterval(() => {// checking in each second the current time of the video
+                                if (getVideo.currentTime >= 10) { // if the video current time is equal or over 10 second
+                                    console.log('it is over 10 second')
+                                    localStorage.setItem('is_visited', 'yes') // set the value as yes on localStorage of the browser
+                                    document.querySelector('body').classList.add('visited') // and add a class called "Visited" to do other tasks
+                                    clearInterval(timeInterVal) // and stop this interval
+                                }
+                            }, 1000);
+                        })
+                    }
+                }
             })
         </script>
     </body>
